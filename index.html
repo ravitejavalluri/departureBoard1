@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8"/>
+        <title>departure board</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+        <script src="myjs.js"></script>
+        
+    </head>
+    <body ng-app="myApp" ng-controller="myC">
+        <table id="table">
+            <tr>
+                <th>TimeStamp</th>
+                <th>Origin</th>
+                <th>Trip</th>
+                <th>Destination</th>
+                <th>ScheduledTime</th>
+                <th>Track</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td ng-repeat="x in allText">{{x}}</td>
+            </tr>
+        </table>
+        <div id="data">
+            <tr>
+                <td ng-repeat = "x in allText"></td>
+            </tr>
+        </div>
+
+    </body>
+</html>
